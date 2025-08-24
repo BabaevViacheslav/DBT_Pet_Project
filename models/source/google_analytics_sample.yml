@@ -1,0 +1,22 @@
+version: 2
+
+sources:
+  - name: google_analytics_sample
+    database: silent-octagon-469913-n2
+    schema: google_analytics_sample
+    tables:
+      - name: daily_total_visits
+        description: "Google Analytics total visits"        
+        columns:
+        - name: visit_date
+          description: "The date of the visit"
+        - name: total_visits
+          description: "Google Analytics total visits"
+          
+      - name: daily_visits
+        description: "Google Analytics daily visits"
+        columns:
+        - name: visit_date
+          description: "The date of the visit" 
+        - name: total_visits
+          description: "Google Analytics total visits"
